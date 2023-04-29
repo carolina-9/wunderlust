@@ -1,0 +1,161 @@
+/* Carolina Pesqueira */
+
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+/* root colors */
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple:#9B26B0;
+    --blue:#499BD2;
+    --dark-gray:#222222;
+    --light-gray:#EAEAEA;
+    --white:#FFFFFF;
+    --black:#000000;
+
+    --molle:'Molle', cursive;
+    --monsterrat:'Montserrat', sans-serif;
+
+}
+
+/* hide skip link */
+#skip {
+    display:none;
+}
+
+/* make header column */
+header {
+    display:flex;
+    flex-direction: column;
+}
+/* hide header */
+nav h2 {
+    display:none;
+}
+/* nav main component */
+nav {
+    background-color: var(--teal);
+    position:absolute;
+    width:71vh;
+    height:109vh;
+    right: 71vh;
+  -webkit-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
+  transition: left 0.3s ease; 
+
+}
+/* nav block */
+
+nav li {
+    text-align: center;
+    border: 1px solid black;
+    padding:65px;
+    font-family: var(--monsterrat);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:25px;
+}
+nav a {
+    color:var(--black);
+    text-decoration: none;
+}
+#menu-toggle {
+ display: block;
+  position: relative;
+  z-index: 1;  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+    user-select: none;
+}
+
+#menu-toggle a {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+#menu-toggle input {
+    display: block;
+    position: relative;
+    width:100px;
+    height:30px;
+    right:-71vh;
+    cursor: pointer;  
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */  
+    -webkit-touch-callout: none;
+}
+#menu-toggle label {
+    position: relative;
+    right:-71vh;
+    background-color: var(--yellow);
+    padding:5px;
+    font-family:var(--monsterrat);
+    font-weight:bold;
+    width:100px;
+    height:30px;
+    text-align: center;
+}
+#menu-toggle label:focus {
+position: relative;
+  display: block;
+  background-color: var(--black);
+  color:var(--white);
+  font-size:25px;
+  font-family: var(--monsterrat);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding:35px;
+  display:block;
+}
+#menu-toggle input:checked ~ nav {
+    right: 0;
+  }
+ 
