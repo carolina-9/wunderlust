@@ -149,9 +149,9 @@ h1, header > p, #intro > h2, #intro > p {
     width:135px;
     z-index: 2;
     padding:15px;
-    position: absolute;
-    top:-168px;
-    left:155px;
+    position: relative;
+    top:-210px;
+    left:250px;
     font-family: var(--monsterrat);
     font-weight: bold;
     text-transform: uppercase;
@@ -163,8 +163,8 @@ h1, header > p, #intro > h2, #intro > p {
 ul {
     background-color: var(--teal);
     position:absolute;
-    width:50vh;
-    height:110vh;
+    width:100%;
+    height:93vh;
     top:-120px;
     right: -80vh;
   -webkit-transition: right 0.3s ease;
@@ -209,11 +209,9 @@ nav a {
     position: relative;
     width:100px;
     height:30px;
-    /* right:-71vh; */
     cursor: pointer;  
     opacity: 0; 
     z-index: 2;   
-    -webkit-touch-callout: none;
 }
 
 #menu-toggle input:active {
@@ -559,6 +557,7 @@ footer a {
     #intro p {
         width:600px;
         margin-left:50px;
+        margin-bottom:20px;
     }
     #img-grid {
         display: grid;
@@ -568,8 +567,11 @@ footer a {
         margin: 0 auto;
         /* padding:50px; */
         width:700px;
+        padding-right:10px;
 
     }
+   
+    
     #img-grid img:first-child {
         grid-row: 1;
         grid-column: 1;
@@ -603,6 +605,7 @@ footer a {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         margin: 0 auto;
+        margin-bottom:20px;
       }
   
       
@@ -745,7 +748,7 @@ footer a {
    nav {
     position: absolute;
     top: -70px;
-    right: -90px;
+    right: -170px;
   }
 
   /* float the intro section */
