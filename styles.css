@@ -163,7 +163,7 @@ h1, header > p, #intro > h2, #intro > p {
 ul {
     background-color: var(--teal);
     position:absolute;
-    width:60vh;
+    width:50vh;
     height:110vh;
     top:-120px;
     right: -80vh;
@@ -176,6 +176,7 @@ ul {
 
 nav li {
     text-align: center;
+    justify-content: center;
     border: 1px solid black;
     padding:65px;
     font-family: var(--monsterrat);
@@ -744,7 +745,7 @@ footer a {
    nav {
     position: absolute;
     top: -70px;
-    right: -170px;
+    right: -90px;
   }
 
   /* float the intro section */
